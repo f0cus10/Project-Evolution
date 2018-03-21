@@ -1,0 +1,3 @@
+/home/gruno/Projects/Project-Evolution/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/gruno/Projects/Project-Evolution/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gruno/Projects/Project-Evolution/cmake-build-debug/CMakeFiles/Project_Evolution.dir
