@@ -84,6 +84,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/gruno/Projects/Project-Evolution/Entry.cpp">
+			<Option target="Project_Evolution"/>
+		</Unit>
+		<Unit filename="/home/gruno/Projects/Project-Evolution/Entry.hpp">
+			<Option target="Project_Evolution"/>
+		</Unit>
+		<Unit filename="/home/gruno/Projects/Project-Evolution/Shell.cpp">
+			<Option target="Project_Evolution"/>
+		</Unit>
+		<Unit filename="/home/gruno/Projects/Project-Evolution/Shell.hpp">
+			<Option target="Project_Evolution"/>
+		</Unit>
 		<Unit filename="/home/gruno/Projects/Project-Evolution/main.cpp">
 			<Option target="Project_Evolution"/>
 		</Unit>

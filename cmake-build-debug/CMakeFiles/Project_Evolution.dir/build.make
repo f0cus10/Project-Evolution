@@ -81,17 +81,69 @@ CMakeFiles/Project_Evolution.dir/main.cpp.o.provides: CMakeFiles/Project_Evoluti
 CMakeFiles/Project_Evolution.dir/main.cpp.o.provides.build: CMakeFiles/Project_Evolution.dir/main.cpp.o
 
 
+CMakeFiles/Project_Evolution.dir/Shell.cpp.o: CMakeFiles/Project_Evolution.dir/flags.make
+CMakeFiles/Project_Evolution.dir/Shell.cpp.o: ../Shell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gruno/Projects/Project-Evolution/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project_Evolution.dir/Shell.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_Evolution.dir/Shell.cpp.o -c /home/gruno/Projects/Project-Evolution/Shell.cpp
+
+CMakeFiles/Project_Evolution.dir/Shell.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_Evolution.dir/Shell.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gruno/Projects/Project-Evolution/Shell.cpp > CMakeFiles/Project_Evolution.dir/Shell.cpp.i
+
+CMakeFiles/Project_Evolution.dir/Shell.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_Evolution.dir/Shell.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gruno/Projects/Project-Evolution/Shell.cpp -o CMakeFiles/Project_Evolution.dir/Shell.cpp.s
+
+CMakeFiles/Project_Evolution.dir/Shell.cpp.o.requires:
+
+.PHONY : CMakeFiles/Project_Evolution.dir/Shell.cpp.o.requires
+
+CMakeFiles/Project_Evolution.dir/Shell.cpp.o.provides: CMakeFiles/Project_Evolution.dir/Shell.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Project_Evolution.dir/build.make CMakeFiles/Project_Evolution.dir/Shell.cpp.o.provides.build
+.PHONY : CMakeFiles/Project_Evolution.dir/Shell.cpp.o.provides
+
+CMakeFiles/Project_Evolution.dir/Shell.cpp.o.provides.build: CMakeFiles/Project_Evolution.dir/Shell.cpp.o
+
+
+CMakeFiles/Project_Evolution.dir/Entry.cpp.o: CMakeFiles/Project_Evolution.dir/flags.make
+CMakeFiles/Project_Evolution.dir/Entry.cpp.o: ../Entry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gruno/Projects/Project-Evolution/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project_Evolution.dir/Entry.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_Evolution.dir/Entry.cpp.o -c /home/gruno/Projects/Project-Evolution/Entry.cpp
+
+CMakeFiles/Project_Evolution.dir/Entry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_Evolution.dir/Entry.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gruno/Projects/Project-Evolution/Entry.cpp > CMakeFiles/Project_Evolution.dir/Entry.cpp.i
+
+CMakeFiles/Project_Evolution.dir/Entry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_Evolution.dir/Entry.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gruno/Projects/Project-Evolution/Entry.cpp -o CMakeFiles/Project_Evolution.dir/Entry.cpp.s
+
+CMakeFiles/Project_Evolution.dir/Entry.cpp.o.requires:
+
+.PHONY : CMakeFiles/Project_Evolution.dir/Entry.cpp.o.requires
+
+CMakeFiles/Project_Evolution.dir/Entry.cpp.o.provides: CMakeFiles/Project_Evolution.dir/Entry.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Project_Evolution.dir/build.make CMakeFiles/Project_Evolution.dir/Entry.cpp.o.provides.build
+.PHONY : CMakeFiles/Project_Evolution.dir/Entry.cpp.o.provides
+
+CMakeFiles/Project_Evolution.dir/Entry.cpp.o.provides.build: CMakeFiles/Project_Evolution.dir/Entry.cpp.o
+
+
 # Object files for target Project_Evolution
 Project_Evolution_OBJECTS = \
-"CMakeFiles/Project_Evolution.dir/main.cpp.o"
+"CMakeFiles/Project_Evolution.dir/main.cpp.o" \
+"CMakeFiles/Project_Evolution.dir/Shell.cpp.o" \
+"CMakeFiles/Project_Evolution.dir/Entry.cpp.o"
 
 # External object files for target Project_Evolution
 Project_Evolution_EXTERNAL_OBJECTS =
 
 Project_Evolution: CMakeFiles/Project_Evolution.dir/main.cpp.o
+Project_Evolution: CMakeFiles/Project_Evolution.dir/Shell.cpp.o
+Project_Evolution: CMakeFiles/Project_Evolution.dir/Entry.cpp.o
 Project_Evolution: CMakeFiles/Project_Evolution.dir/build.make
 Project_Evolution: CMakeFiles/Project_Evolution.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gruno/Projects/Project-Evolution/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Project_Evolution"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gruno/Projects/Project-Evolution/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Project_Evolution"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project_Evolution.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,6 +152,8 @@ CMakeFiles/Project_Evolution.dir/build: Project_Evolution
 .PHONY : CMakeFiles/Project_Evolution.dir/build
 
 CMakeFiles/Project_Evolution.dir/requires: CMakeFiles/Project_Evolution.dir/main.cpp.o.requires
+CMakeFiles/Project_Evolution.dir/requires: CMakeFiles/Project_Evolution.dir/Shell.cpp.o.requires
+CMakeFiles/Project_Evolution.dir/requires: CMakeFiles/Project_Evolution.dir/Entry.cpp.o.requires
 
 .PHONY : CMakeFiles/Project_Evolution.dir/requires
 

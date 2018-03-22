@@ -123,6 +123,60 @@ Project_Evolution/fast:
 	$(MAKE) -f CMakeFiles/Project_Evolution.dir/build.make CMakeFiles/Project_Evolution.dir/build
 .PHONY : Project_Evolution/fast
 
+Entry.o: Entry.cpp.o
+
+.PHONY : Entry.o
+
+# target to build an object file
+Entry.cpp.o:
+	$(MAKE) -f CMakeFiles/Project_Evolution.dir/build.make CMakeFiles/Project_Evolution.dir/Entry.cpp.o
+.PHONY : Entry.cpp.o
+
+Entry.i: Entry.cpp.i
+
+.PHONY : Entry.i
+
+# target to preprocess a source file
+Entry.cpp.i:
+	$(MAKE) -f CMakeFiles/Project_Evolution.dir/build.make CMakeFiles/Project_Evolution.dir/Entry.cpp.i
+.PHONY : Entry.cpp.i
+
+Entry.s: Entry.cpp.s
+
+.PHONY : Entry.s
+
+# target to generate assembly for a file
+Entry.cpp.s:
+	$(MAKE) -f CMakeFiles/Project_Evolution.dir/build.make CMakeFiles/Project_Evolution.dir/Entry.cpp.s
+.PHONY : Entry.cpp.s
+
+Shell.o: Shell.cpp.o
+
+.PHONY : Shell.o
+
+# target to build an object file
+Shell.cpp.o:
+	$(MAKE) -f CMakeFiles/Project_Evolution.dir/build.make CMakeFiles/Project_Evolution.dir/Shell.cpp.o
+.PHONY : Shell.cpp.o
+
+Shell.i: Shell.cpp.i
+
+.PHONY : Shell.i
+
+# target to preprocess a source file
+Shell.cpp.i:
+	$(MAKE) -f CMakeFiles/Project_Evolution.dir/build.make CMakeFiles/Project_Evolution.dir/Shell.cpp.i
+.PHONY : Shell.cpp.i
+
+Shell.s: Shell.cpp.s
+
+.PHONY : Shell.s
+
+# target to generate assembly for a file
+Shell.cpp.s:
+	$(MAKE) -f CMakeFiles/Project_Evolution.dir/build.make CMakeFiles/Project_Evolution.dir/Shell.cpp.s
+.PHONY : Shell.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Project_Evolution"
+	@echo "... Entry.o"
+	@echo "... Entry.i"
+	@echo "... Entry.s"
+	@echo "... Shell.o"
+	@echo "... Shell.i"
+	@echo "... Shell.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,7 +1,8 @@
-#include <iostream>
-
+#include "Shell.hpp"
 int main() {
     //Call the shell
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    Shell sh;
+    while(!sh.quit()){
+        sh.prompt();
+    }
 }

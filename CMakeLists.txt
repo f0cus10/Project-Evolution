@@ -3,4 +3,4 @@ project(Project_Evolution)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Project_Evolution main.cpp)
+add_executable(Project_Evolution main.cpp Shell.cpp Shell.hpp Entry.cpp Entry.hpp)
