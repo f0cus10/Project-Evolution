@@ -30,10 +30,11 @@ Entry::Entry(const string &fileName) {
         epoch_ = stoi(beginning);
     }
     catch (exception &e){
+		file.close();
         epoch_ = time(nullptr);
         //Should be non-blocking since file wasn't being opened for writing
         ofstream modify;
-        modify.open(file_, ios_base::out);
+        modify.open(file_);
         modify << epoch_ << endl;
         modify.close();
     }
@@ -43,7 +44,7 @@ Entry::Entry(const string &fileName) {
 
 void Entry::addEntry(const vector<string>& inputVector){
     ofstream file;
-    string newFile = showDifference() + ".log";
+    string newFile = ".data/" + showDifference() + ".log";
 
     file.open(newFile, ios_base::app);
 
@@ -60,5 +61,5 @@ void Entry::deleteEntry(const string &name) {
 
 string Entry::showDifference() {
     unsigned int day = long(epoch_ - now_) / (24 * 3600);
-    return "Day " + to_string(day);
+    return "Day" + to_string(day);
 }

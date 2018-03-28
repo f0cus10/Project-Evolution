@@ -56,12 +56,13 @@ void Shell::addEntry() {
     cout << "Enter your journal entry" << endl;
     cout << "> ";
     vector<string> inputs;
-    string line = "";
 
-    while(line != "DONE"){
-        inputs.push_back(line);
-    }
-
+	while (true){
+		string line;
+		getline(cin, line);
+		if(line == "DONE") break;
+		inputs.push_back(line);
+	}
     entryMaker_->addEntry(inputs);
 }
 
