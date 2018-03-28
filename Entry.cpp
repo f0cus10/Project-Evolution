@@ -30,7 +30,7 @@ Entry::Entry(const string &fileName) {
         epoch_ = stoi(beginning);
     }
     catch (exception &e){
-		file.close();
+		    file.close();
         epoch_ = time(nullptr);
         //Should be non-blocking since file wasn't being opened for writing
         ofstream modify;
